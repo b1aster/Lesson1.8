@@ -42,9 +42,9 @@ public class Main {
         }
 
         // Разделитель
-        System.out.println();
+        System.out.println("\n");
 
-        // Задача 2
+        // Задача 3
         for (int idx = numbers.length-1; idx >= 0; idx--){
 
             System.out.print(numbers[idx]);
@@ -71,6 +71,21 @@ public class Main {
 
             if (idx > 0 && idx < message.length)
                 System.out.print(", ");
+        }
+
+        // Разделитель
+        System.out.println("\n");
+
+        // Задача 4
+        for (int idx = 0; idx < numbers.length; idx++){
+
+            if (numbers[idx] % 2 != 0)
+                numbers[idx] += 1;
+
+            if (idx > 0 && idx < numbers.length)
+                System.out.print(", ");
+
+            System.out.print(numbers[idx]);
         }
 
     }
