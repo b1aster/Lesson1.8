@@ -31,14 +31,47 @@ public class Main {
 
         System.out.println();
 
-        int idx = 0;
+        int ct = 0;
         for (char ch : message){
 
-            if (idx > 0 && idx < message.length)
+            if (ct > 0 && ct < message.length)
                 System.out.print(", ");
 
             System.out.print(ch);
-            idx++;
+            ct++;
         }
+
+        // Разделитель
+        System.out.println();
+
+        // Задача 2
+        for (int idx = numbers.length-1; idx >= 0; idx--){
+
+            System.out.print(numbers[idx]);
+
+            if (idx > 0 && idx < numbers.length)
+                System.out.print(", ");
+        }
+
+        System.out.println();
+
+        for (int idx = weights.length-1; idx >= 0; idx--){
+
+            System.out.print(weights[idx]);
+
+            if (idx > 0 && idx < weights.length)
+                System.out.print(", ");
+        }
+
+        System.out.println();
+
+        for (int idx = message.length-1; idx >= 0; idx--){
+
+            System.out.print(message[idx]);
+
+            if (idx > 0 && idx < message.length)
+                System.out.print(", ");
+        }
+
     }
 }
